@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main Page</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .center-content {
+            text-align: center;
+            width: 300px; /* Or any other width */
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px; /* Space between buttons */
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-content">
+        <h3>Welcome to student portal!!</h3>
+        
+        <button onclick="window.location.href='{{ url_for('add_student') }}'">Add Student Details</button>
+        <button onclick="window.location.href='{{ url_for('search_student') }}'">View Student Details</button>
+    </div>
+</body>
+</html>
+
